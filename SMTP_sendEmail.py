@@ -29,6 +29,7 @@ except smtplib.SMTPAuthenticationError as e:
 	e_str = str(e)
 	errordescription = e_str[5:len(e_str)-1]
 	print(errordescription)
+	# 就是想读出来那个bytes类型的字符串到底是个啥
 
 finally:
 	server.quit()
