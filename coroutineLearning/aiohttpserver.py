@@ -9,7 +9,7 @@ import asyncio
 from aiohttp import web
 
 
-async def index(request):
+async def index():
 	await asyncio.sleep(0.5)
 	return web.Response(body=b'<h1>Index<h1>')
 
@@ -36,3 +36,5 @@ except OSError as e:
 	loop.close()
 finally:
 	loop.run_forever()
+
+# we use browser to test our http server
