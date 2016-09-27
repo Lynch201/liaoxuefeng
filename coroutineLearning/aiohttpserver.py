@@ -38,3 +38,4 @@ finally:
 	loop.run_forever()
 
 # we use browser to test our http server
+# but if we want to di it by us, use urllib.request
